@@ -1,0 +1,35 @@
+---
+- hosts: all
+
+  vars_files:
+    - ../config.yml
+
+  pre_tasks:
+    - include: tasks/init-debian.yml
+      when: ansible_os_family == 'Debian'
+
+  roles:
+    # Essential roles.
+    - virtualenv.firewall
+    - virtualenv.git
+    - virtualenv.postfix
+    - { role: virtualenv.apache, when: openapphackvm_webserver == 'apache' }
+    - { role: virtualenv.nginx, when: openapphackvm_webserver == 'nginx' }
+    - virtualenv.mysql
+
+
+
+    # Conditionally-installed roles.
+    - { role: virtualenv.nodejs, when: '"nodejs" in installed_extras' }
+    - { role: virtualenv.ruby, when: '"ruby" in installed_extras' }
+
+    # Roles for security and stability on production.
+    - { role: virtualenv.security, when: extra_security_enabled }
+
+  tasks:
+    - include: tasks/sshd.yml
+    - include: tasks/extras.yml
+    - include: tasks/www.yml
+      when: ansible_os_family == 'Debian'
+
+    - include: tasks/cron.yml

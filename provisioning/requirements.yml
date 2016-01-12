@@ -1,0 +1,12 @@
+---
+- src: virtualenv.apache
+- src: virtualenv.daemonize
+- src: virtualenv.firewall
+- src: virtualenv.git
+- src: virtualenv.java
+- src: virtualenv.mysql
+- src: virtualenv.nginx
+- src: virtualenv.nodejs
+- src: virtualenv.postfix
+- src: virtualenv.ruby
+- src: virtualenv.security
