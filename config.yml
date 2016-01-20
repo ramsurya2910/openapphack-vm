@@ -43,6 +43,31 @@ mysql_password: openapphack
 mysql_database: openapphackdb
 
 
+# set to false if you do not want to generate the app using generateapp instructions
+generate_app: true
+#The path to the generator ,will be picked up from an ansible role of the generator
+#generator_path: ""
+
+#The type of generator for now it is yo, more generators to be added later
+#generator_type: "yo"
+
+#The argumentst to generator
+# e.g generator_arguments: "" for yo
+# e.g generator_arguments: "-v -y" for drush make
+#generator_arguments: ""
+
+#set to false if you don't want to install the app using install instructions
+install_app: true
+
+# app runner used to install and run the app
+#app_runner: node
+
+# arguments to be passed to app
+#app_arguments:
+
+# set to false if you don't want to run the app
+run_app: true
+
 # Cron jobs are added to the root user's crontab. Keys include name (required),
 # minute, hour, day, weekday, month, job (required), and state.
 openapphackvm_cron_jobs: []
@@ -72,7 +97,7 @@ apache_mods_enabled:
 # here.
 nginx_hosts:
   - server_name: "{{ app_domain }}"
-    root: "{{ app_core_path }}"
+    root: "{{ app_path }}"
 
 
 

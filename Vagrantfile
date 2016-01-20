@@ -95,7 +95,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--ioapic", "on"]
   end
 
-
+ # Optional Include Docker provisioner
 
 
   config.vm.define vconfig['vagrant_machine_name'] do |d|

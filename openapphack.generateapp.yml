@@ -1,0 +1,9 @@
+## The app generator specific instructions go here
+
+##  TODO Demo app generator will come in here
+
+## Replace the Demo app generator with your app generator configurations
+---
+generator_instructions:
+  - echo "Your instructions to generate your app will come here"
+  - echo " call openapphack-generator-generator"

@@ -1,0 +1,8 @@
+---
+- name: Running Your Openapphack app.
+  command: >
+    chdir={{ app_path }}
+    {{ item }}
+  with_items: run_app_instructions
+  when: app.stat.exists == true
+  sudo: no
