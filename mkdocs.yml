@@ -1,7 +1,7 @@
 site_name: Open App Hack Documentation
 
 repo_url: https://github.com/WiproOpenSourcePractice/openhack-vm.git
-site_description: 'OpenApphack-VM - A VM for Openhack development, built with Vagrant + Ansible'
+site_description: 'OpenApphack-VM - A VM for OpenApphack development, built with Vagrant + Ansible'
 theme: readthedocs
 
 markdown_extensions:
