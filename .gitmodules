@@ -1,0 +1,6 @@
+[submodule "lib/openapphack/modules/roles/ansible"]
+	path = lib/openapphack/modules/roles/ansible
+	url = https://github.com/openapphack/openapphack-ansible-roles
+[submodule "lib/openapphack/modules/generators/yoeman"]
+	path = lib/openapphack/modules/generators/yoeman
+	url = https://github.com/openapphack/openapphack-yoeman-generators
