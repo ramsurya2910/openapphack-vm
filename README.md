@@ -78,12 +78,14 @@ to generate your first build…
 $ grunt watch
 
 to start the watcher.
-'''
-You can also use gulp or another build tool depending on the technology context 
 
-You will have to install the neccessary ansible role and notify the same with a pull request to openapphack-ansible-roles repo.
-'''
 Now you should have your fully scaffolded site!
+
+
+*You can also use gulp or another build tool depending on the technology context*
+
+*You will have to install the neccessary ansible role and notify the same with a pull request to openapphack-ansible-roles repo*
+
 
 **Level 4** :
 
@@ -93,6 +95,6 @@ Automate all you did in level 3 :)
 
 **Level 5**
 
-When everything works for you.. submit a pull request to openapphack repo using the pullrequest template
+When everything works for you.. submit a pull request to openapphack-vm repo using the pullrequest template and details of your openapphack-vm fork.
 
-and find your fork project added to openapphack projects
+After your openapphack-vm is validated please find your fork added to submitted openapphack projects.
