@@ -50,7 +50,7 @@ Write your ansible role to do the same.
 
 Install your specific generators
 
-e.g npm install -g generator-patternlab ( this can be any one of the generators from the list of generators mentioned in openapphack-yoeman-generators repo)
+npm install -g generator-{give-your-generator-name} ( this can be any one of the generators from the list of generators mentioned in openapphack-yoeman-generators repo e.g. npm install -g generator-patternlab)
 
 Update the same as generator_instructions in  openapphack.generateapp.yml or
 
@@ -65,19 +65,24 @@ Log on to the vm https://openapphackvm.dev:4200/ as
 
 navigate to /var/www/path_to_your_app
 
-Type $ yo patternlab
+Type $ yo {your-generator-name}
 and answer a few questions about your project.
 
 When it's done, type
 $ grunt
 
-to generate your first Pattern Lab build…
+to generate your first build…
+
 …and
 
 $ grunt watch
 
 to start the watcher.
+'''
+You can also use gulp or another build tool depending on the technology context 
 
+You will have to install the neccessary ansible role and notify the same with a pull request to openapphack-ansible-roles repo.
+'''
 Now you should have your fully scaffolded site!
 
 **Level 4** :
