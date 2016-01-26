@@ -1,5 +1,7 @@
 
-This is main repository of the openapphack project
+This is the main repository for the openapphack project. 
+
+openapphack project is also used interchangable to refer to an openapphack-vm fork on which you are doing your openapphack vm customization.
 
 To know more about the openapphack project please visit this [wiki](https://github.com/WiproOpenSourcePractice/openapphack/wiki)
 
@@ -16,6 +18,7 @@ You start by :
 - Install few vagrant plugins
 
   a) auto_network
+  
   b) hostsupdater
 
 - Run vagrant up
