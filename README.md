@@ -13,8 +13,14 @@ You start by :
 
 - Fork openapphack-vm
 
-- Installing vagrant 1.8 +
+- Install ansible and execute 
+  
+  sudo ansible-galaxy install -r ./provisioning/requirements.yml 
 
+  while in the openapphack-vm folder
+
+- Installing vagrant 1.8 +
+ 
 - Install few vagrant plugins
 
   a) auto_network
