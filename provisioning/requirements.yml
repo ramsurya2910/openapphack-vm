@@ -1,12 +1,12 @@
 ---
-- src: virtualenv.apache
-- src: virtualenv.daemonize
-- src: virtualenv.firewall
-- src: virtualenv.git
-- src: virtualenv.java
-- src: virtualenv.mysql
-- src: virtualenv.nginx
-- src: virtualenv.nodejs
-- src: virtualenv.postfix
-- src: virtualenv.ruby
-- src: virtualenv.security
+- src: openapphack.apache
+- src: openapphack.daemonize
+- src: openapphack.firewall
+- src: openapphack.git
+- src: openapphack.java
+- src: openapphack.mysql
+- src: openapphack.nginx
+- src: openapphack.nodejs
+- src: openapphack.postfix
+- src: openapphack.ruby
+- src: openapphack.security

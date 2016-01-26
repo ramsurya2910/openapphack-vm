@@ -18,19 +18,19 @@
 
   roles:
     # Essential roles.
-    - virtualenv.firewall
-    - virtualenv.git
-    - virtualenv.postfix
-    - { role: virtualenv.apache, when: openapphackvm_webserver == 'apache' }
-    - { role: virtualenv.nginx, when: openapphackvm_webserver == 'nginx' }
-    - virtualenv.mysql
+    - openapphack.firewall
+    - openapphack.git
+    - openapphack.postfix
+    - { role: openapphack.apache, when: openapphackvm_webserver == 'apache' }
+    - { role: openapphack.nginx, when: openapphackvm_webserver == 'nginx' }
+    - openapphack.mysql
 
     # Conditionally-installed roles.
-    - { role: virtualenv.nodejs, when: '"nodejs" in installed_extras' }
-    - { role: virtualenv.ruby, when: '"ruby" in installed_extras' }
+    - { role: openapphack.nodejs, when: '"nodejs" in installed_extras' }
+    - { role: openapphack.ruby, when: '"ruby" in installed_extras' }
 
     # Roles for security and stability on production.
-    - { role: virtualenv.security, when: extra_security_enabled }
+    - { role: openapphack.security, when: extra_security_enabled }
 
   tasks:
     - name: Check if your app is already set up.
