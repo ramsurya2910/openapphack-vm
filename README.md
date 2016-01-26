@@ -1,6 +1,11 @@
 
+This is main repository of the openapphack project
 
-How to take openapphack-vm for a spin :
+To know more about the openapphack project please visit this [wiki](https://github.com/WiproOpenSourcePractice/openapphack/wiki)
+
+
+
+How to take **openapphack-vm** for a spin :
 
 You start by :
 
@@ -98,3 +103,5 @@ Automate all you did in level 3 :)
 When everything works for you.. submit a pull request to openapphack-vm repo using the pullrequest template and details of your openapphack-vm fork.
 
 After your openapphack-vm is validated please find your fork added to submitted openapphack projects.
+
+if you are facing any challenge with getting started with the openhack-vm please refer to the [issues](https://github.com/WiproOpenSourcePractice/openapphack-vm/issues) 
