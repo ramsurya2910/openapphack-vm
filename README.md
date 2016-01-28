@@ -46,11 +46,12 @@ You start by :
   If its windows 8 host path would be Drive:\HashiCorp\Vagrant\embedded\gems\gems\vagrant-1.8.1\plugins\provisioners
   
 
-- Run **vagrant up**
+- Run **vagrant up**   ( GitBash.exe run as Administrator on Windows ) 
 
+  
 You should now have ansible start doing the basic provisioning for you.
 
-- Run vagrant provision
+- Run **vagrant provision**
 
 re-run vagrant provision command few more times, i.e  if ansible throws up any messages that requires your attention and you successfully resolve them .
 
