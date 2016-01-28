@@ -20,7 +20,9 @@ You start by :
   while in the openapphack-vm folder
 
 - Installing vagrant 1.8 +
- 
+
+- Install nfs server on Ubuntu
+
 - Install few vagrant plugins
 
   a) auto_network
