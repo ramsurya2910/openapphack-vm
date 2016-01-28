@@ -27,11 +27,17 @@ You start by :
 
   a) auto_network
   
+  ```sh
   **vagrant  plugin install vagrant-auto_network**
+  
+  ```
   
   b) hostsupdater
   
+  ```sh
   **vagrant plugin install vagrant-hostsupdater**
+  
+  ```
   
   There are some bugs identified in the current vagrant version 1.8.1 which is expected to be fixed on 1.8.2 .
   
@@ -47,18 +53,24 @@ You start by :
   
   If its windows 8 host path would be Drive:\HashiCorp\Vagrant\embedded\gems\gems\vagrant-1.8.1\plugins\provisioners
   
-
+```sh
 - Run **vagrant up**   ( GitBash.exe run as Administrator on Windows ) 
 
-  
+```
+
 You should now have ansible start doing the basic provisioning for you.
 
+```sh
 - Run **vagrant provision**
+
+```
 
 re-run vagrant provision command few more times, i.e  if ansible throws up any messages that requires your attention and you successfully resolve them .
 
 
 Make changes in the following files as required.
+
+```sh
 
  -config.yml // top level configuration file
 
@@ -68,6 +80,7 @@ Make changes in the following files as required.
 
  -openapphack.runapp.yml  // has instructions to run your app
 
+```
 
 
 Few more Levelup to get yoeman to start doing the automatic scaffolding for you on the openapphack-vm:
@@ -76,17 +89,40 @@ Few more Levelup to get yoeman to start doing the automatic scaffolding for you 
 
 Install yoeman
 
-i.e npm install -g yo
+```sh 
 
-Update the same as generator_instructions in  openapphack.generateapp.yml or
+npm install -g yo
 
-Write your ansible role to do the same.
+```
+
+Update the same as generator_instructions in  openapphack.generateapp.yml 
+
+or  
+
+alternatively make use of the openapphack.nodejs ansible role and install global nodejs package by declaring the same in config.yml 
+
+i.e make the following change in config.yml
+
+```yml
+# `nodejs` must be in installed_extras for this to work.
+nodejs_version: "4.2"
+nodejs_npm_global_packages:
+  - name: yo
+  - name: bower
+  - name: grunt-cli
+```
+
 
 **Level 2**:
 
-Install your specific generators
+Install your specific generators or pick up one of the available published yoeman generators and customize it to work with openapphack-vm.
 
-npm install -g generator-{give-your-generator-name} ( this can be any one of the generators from the list of generators mentioned in openapphack-yoeman-generators repo e.g. npm install -g generator-patternlab)
+( this can be any one of the generators from the list of generators mentioned in openapphack-yoeman-generators repo e.g. npm install -g generator-patternlab)
+
+```sh
+npm install -g generator-{give-your-generator-name} 
+
+```
 
 Update the same as generator_instructions in  openapphack.generateapp.yml or
 
@@ -135,4 +171,4 @@ When everything works for you.. submit a pull request to openapphack-vm repo usi
 
 After your openapphack-vm is validated please find your fork added to submitted openapphack projects.
 
-if you are facing any challenge with getting started with the openhack-vm please refer to the [issues](https://github.com/WiproOpenSourcePractice/openapphack-vm/issues) 
+if you are facing any challenge with getting started with the openapphack-vm please refer to the [issues](https://github.com/WiproOpenSourcePractice/openapphack-vm/issues) 
