@@ -20,18 +20,40 @@ You start by :
   while in the openapphack-vm folder
 
 - Installing vagrant 1.8 +
- 
+
+- Install nfs server on Ubuntu
+
 - Install few vagrant plugins
 
   a) auto_network
   
+  **vagrant  plugin install vagrant-auto_network**
+  
   b) hostsupdater
+  
+  **vagrant plugin install vagrant-hostsupdater**
+  
+  There are some bugs identified in the current vagrant version 1.8.1 which is expected to be fixed on 1.8.2 .
+  
+  
+  To overcome you can copy the **ansible** directory from the github link below 
+  
+    [Github mitchellh](https://github.com/mitchellh/vagrant/)   ; Download or clone it 
+  
+   Then goto vagrant-master/plugins/provisioners/  copy the ansible directory and paste on vagrant path
 
-- Run vagrant up
+  
+  If you are using Ubunbtu host the path would be /opt/vagrant/embedded/gems/gems/vagrant-1.8.1/plugins/provisioners/
+  
+  If its windows 8 host path would be Drive:\HashiCorp\Vagrant\embedded\gems\gems\vagrant-1.8.1\plugins\provisioners
+  
 
+- Run **vagrant up**   ( GitBash.exe run as Administrator on Windows ) 
+
+  
 You should now have ansible start doing the basic provisioning for you.
 
-- Run vagrant provision
+- Run **vagrant provision**
 
 re-run vagrant provision command few more times, i.e  if ansible throws up any messages that requires your attention and you successfully resolve them .
 
