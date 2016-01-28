@@ -34,11 +34,11 @@ You start by :
   There are some bugs identified in the current vagrant version 1.8.1 which is expected to be fixed on 1.8.2 .
   
   
-  To overcome you can copy the **ansible** directory from the github link below  and replace with the original 
+  To overcome you can copy the **ansible** directory from the github link below 
   
-    [Github mitchellh](https://github.com/mitchellh/vagrant/)   
+    [Github mitchellh](https://github.com/mitchellh/vagrant/)   ; Download or clone it 
   
-   Then goto /plugins/provisioners/  copy the ansible directory and paste on vagrant paths
+   Then goto vagrant-master/plugins/provisioners/  copy the ansible directory and paste on vagrant path
 
   
   If you are using Ubunbtu host the path would be /opt/vagrant/embedded/gems/gems/vagrant-1.8.1/plugins/provisioners/
