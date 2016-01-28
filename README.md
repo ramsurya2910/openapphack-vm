@@ -26,6 +26,7 @@ You start by :
   a) auto_network
   
   b) hostsupdater
+  vagrant plugin install vagrant-hostsupdater
 
 - Run vagrant up
 
