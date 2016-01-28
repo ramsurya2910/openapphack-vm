@@ -25,9 +25,23 @@ You start by :
 
   a) auto_network
   
+  vagrant  plugin install vagrant-auto_network
+  
   b) hostsupdater
   
   vagrant plugin install vagrant-hostsupdater
+  
+  There are some bugs identified in the current vagrant version 1.8.1 which is expected to be fixed on 1.8.2 .
+  
+  The bugs are affected if you are using windows hosts .
+  
+  To overcome you can copy the ansible directory and replace with the original 
+  
+  If you are using Ubunbtu host the path would be /opt/vagrant/embedded/gems/gems/vagrant-1.8.1/plugins/provisioners/
+  
+  If its windows 8 host path would be Drive:
+  
+  [Git](https://github.com/mitchellh/vagrant/tree/25ff027b08582978981ed28754a3fed21953a90e/plugins/provisioners/ansible)
 
 - Run vagrant up
 
