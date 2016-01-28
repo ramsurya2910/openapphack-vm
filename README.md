@@ -30,14 +30,14 @@ You start by :
   a) auto_network
   
   ```sh
-  **vagrant  plugin install vagrant-auto_network**
+  vagrant  plugin install vagrant-auto_network
   
   ```
   
   b) hostsupdater
   
   ```sh
-  **vagrant plugin install vagrant-hostsupdater**
+  vagrant plugin install vagrant-hostsupdater
   
   ```
   
@@ -60,14 +60,18 @@ You start by :
   ```
   
 ```sh
-- Run **vagrant up**   ( GitBash.exe run as Administrator on Windows ) 
+- Run 
+ 
+  vagrant up   ( GitBash.exe run as Administrator on Windows ) 
 
 ```
 
 You should now have ansible start doing the basic provisioning for you.
 
 ```sh
-- Run **vagrant provision**
+- Run 
+  
+   vagrant provision
 
 ```
 
