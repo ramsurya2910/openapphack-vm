@@ -97,7 +97,7 @@ Few more Levelup to get yeoman to start doing the automatic scaffolding for you 
 
 **Level 1**:
 
-Install yoeman
+Install yeoman
 
 ```sh 
 
