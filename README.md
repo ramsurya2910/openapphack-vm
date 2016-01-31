@@ -93,7 +93,7 @@ Make changes in the following files as required.
 ```
 
 
-Few more Levelup to get yoeman to start doing the automatic scaffolding for you on the openapphack-vm:
+Few more Levelup to get yeoman to start doing the automatic scaffolding for you on the openapphack-vm:
 
 **Level 1**:
 
@@ -125,9 +125,9 @@ nodejs_npm_global_packages:
 
 **Level 2**:
 
-Install your specific generators or pick up one of the available published yoeman generators and customize it to work with openapphack-vm.
+Install your specific generators or pick up one of the available published yeoman generators and customize it to work with openapphack-vm.
 
-( this can be any one of the generators from the list of generators mentioned in openapphack-yoeman-generators repo e.g. npm install -g generator-patternlab)
+( this can be any one of the generators from the list of generators mentioned in openapphack-yeoman-generators repo e.g. npm install -g generator-patternlab)
 
 ```sh
 npm install -g generator-{give-your-generator-name} 
