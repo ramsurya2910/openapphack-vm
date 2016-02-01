@@ -9,8 +9,8 @@
 
 - name: Generate Openapphack app with Openapphack Generators.
   command: >
-    chdir={{ app_path }}}
-    {{ item }}
+      {{ item }}
+      chdir={{ app_path }}
   with_items: generator_instructions | list
   when: app.stat.exists == false and generator_instructions | length
   sudo: no
