@@ -1,6 +1,8 @@
 
 ### openapphack-vm (a.k.a your openapphack project when you fork it!!).
 
+[![Join the chat at https://gitter.im/WiproOpenSourcePractice/openapphack-vm](https://badges.gitter.im/WiproOpenSourcePractice/openapphack-vm.svg)](https://gitter.im/WiproOpenSourcePractice/openapphack-vm?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is the main repository for the openapphack project. 
 
 openapphack project is also used interchangable to refer to an openapphack-vm fork on which you are doing your openapphack vm customization.
