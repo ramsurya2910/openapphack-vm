@@ -1,0 +1,26 @@
+---
+- src: openapphack.selenium
+- src: openapphack.adminer
+- src: openapphack.apache
+- src: openapphack.composer
+- src: openapphack.daemonize
+- src: openapphack.firewall
+- src: openapphack.git
+- src: openapphack.java
+- src: openapphack.mailhog
+- src: openapphack.memcached
+- src: openapphack.mysql
+- src: openapphack.nginx
+- src: openapphack.nodejs
+- src: openapphack.php
+- src: openapphack.php-memcached
+- src: openapphack.php-mysql
+- src: openapphack.php-pecl
+- src: openapphack.php-xdebug
+- src: openapphack.php-xhprof
+- src: openapphack.pimpmylog
+- src: openapphack.postfix
+- src: openapphack.ruby
+- src: openapphack.security
+- src: openapphack.solr
+- src: openapphack.varnish

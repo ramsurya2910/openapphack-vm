@@ -1,6 +1,0 @@
-## The app generator specific instructions go here
-
----
-generator_instructions:
-  - echo "Your instructions to generate your app will come here"
-  - echo " call openapphack-generator-generator"

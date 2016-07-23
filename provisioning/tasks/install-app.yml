@@ -1,8 +1,0 @@
----
-- name: Installing Your Openapphack app.
-  command: >
-    chdir={{ app_path }}
-    {{ item }}
-  with_items: install_instructions
-  when: app.stat.exists == true
-  sudo: no

@@ -9,5 +9,5 @@
     month: "{{ item.month | default('*') }}"
     job: "{{ item.job }}"
     state: "{{ item.state | default('present') }}"
-  with_items: openapphackvm_cron_jobs
-  when: openapphackvm_cron_jobs is defined
+  with_items: oahvm_cron_jobs
+  when: oahvm_cron_jobs is defined

@@ -1,1 +1,1 @@
-[Open App Hack VM] is A VM for local Openapphack development, built with Vagrant + Ansible.
+[OpenAppHack VM]: The Base OAH VM .

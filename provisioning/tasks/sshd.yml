@@ -12,7 +12,7 @@
   connection: local
   sudo: no
 
-- name: Copy known_hosts file from host into Openapphack VM.
+- name: Copy known_hosts file from host into VM.
   copy:
     src: "{{ known_hosts_path | default('~/.ssh/known_hosts') }}"
     dest: ~/.ssh/known_hosts

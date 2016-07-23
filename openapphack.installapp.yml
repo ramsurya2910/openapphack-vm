@@ -1,6 +1,0 @@
-## the app install configurations go here
-
-## add your app specific install instructions here.
----
-install_instructions: 
-  - echo "Instruction to install your app will follow now .."

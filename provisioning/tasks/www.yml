@@ -18,7 +18,7 @@
     state: directory
     mode: 0755
     recurse: true
-  when: openapphackvm_webserver == 'apache'
+  when: oahvm_webserver == 'apache'
 
 - name: Copy Nginx vhosts into place.
   template:
@@ -30,4 +30,4 @@
     mode: 0644
   with_items: nginx_hosts
   notify: restart nginx
-  when: openapphackvm_webserver == 'nginx'
+  when: oahvm_webserver == 'nginx'
